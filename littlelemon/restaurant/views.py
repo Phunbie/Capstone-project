@@ -13,9 +13,11 @@ class MenuItemsView(ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
+
 class SingleMenuItemView(RetrieveUpdateAPIView, DestroyAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
+
 
 class BookingViewSet(ModelViewSet):
     queryset = Booking.objects.all()
